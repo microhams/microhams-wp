@@ -5,7 +5,12 @@
  *
  * Set this to error_reporting( -1 ) for debugging
  */
+/* Original Setting
 error_reporting(0);
+*/
+/* udpated to address missing admin page CSS problem */
+error_reporting( E_ALL | E_STRICT );
+
 
 /** Set ABSPATH for execution */
 if ( ! defined( 'ABSPATH' ) ) {
